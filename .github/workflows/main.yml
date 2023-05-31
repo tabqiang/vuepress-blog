@@ -63,5 +63,5 @@ jobs:
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.PRIVATE_KEY }}
           port: 22
-          source: "docs/dist"
+          source: "docs/dist/"
           target: ${{ secrets.HTML_ENTER_PATH }}
