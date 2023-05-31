@@ -60,8 +60,8 @@ jobs:
         uses: appleboy/scp-action@v0.1.4
         with:
           host: 43.136.17.38
-          username: root
+          username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.PRIVATE_KEY }}
           port: 22
-          source: "docs/"
-          target: “/usr/share/nginx/html”
+          source: ${{ secrets.BUILD_DIR }}
+          target: ${{ secrets.HTML_ENTER_PATH }}
