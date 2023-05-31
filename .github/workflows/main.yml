@@ -56,6 +56,11 @@ jobs:
         
       - name: Build
         run: pnpm run docs:build
+      - name: Cache
+        run: ls -al
+      - name: Pos
+        run: pwd
+      
       - name: copy file via ssh password
         uses: appleboy/scp-action@v0.1.4
         with:
